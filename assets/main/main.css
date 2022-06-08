@@ -1,0 +1,233 @@
+/*
+Button background color
+*/
+/*
+String Replace
+*/
+/*
+Font Face
+*/
+/*
+Cut text
+*/
+/*
+flexbox
+*/
+/*=== MEDIA QUERY ===*/
+@font-face {
+  font-family: "Roboto";
+  font-weight: 900;
+  src: url("./../../fonts/Roboto/Roboto-Bold.eot?") format("eot"), url("./../../fonts/Roboto/Roboto-Bold.woff2") format("woff2"), url("./../../fonts/Roboto/Roboto-Bold.woff") format("woff"), url("./../../fonts/Roboto/Roboto-Bold.ttf") format("truetype"), url('./../../fonts/Roboto/Roboto-Bold.svg#str-replace(Roboto, " ", "_")') format("svg");
+  font-display: swap;
+  /* or block, swap, fallback, optional */
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 300;
+  src: url("./../../fonts/Roboto/Roboto-Light.eot?") format("eot"), url("./../../fonts/Roboto/Roboto-Light.woff2") format("woff2"), url("./../../fonts/Roboto/Roboto-Light.woff") format("woff"), url("./../../fonts/Roboto/Roboto-Light.ttf") format("truetype"), url('./../../fonts/Roboto/Roboto-Light.svg#str-replace(Roboto, " ", "_")') format("svg");
+  font-display: swap;
+  /* or block, swap, fallback, optional */
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  src: url("./../../fonts/Roboto/Roboto-Regular.eot?") format("eot"), url("./../../fonts/Roboto/Roboto-Regular.woff2") format("woff2"), url("./../../fonts/Roboto/Roboto-Regular.woff") format("woff"), url("./../../fonts/Roboto/Roboto-Regular.ttf") format("truetype"), url('./../../fonts/Roboto/Roboto-Regular.svg#str-replace(Roboto, " ", "_")') format("svg");
+  font-display: swap;
+  /* or block, swap, fallback, optional */
+}
+@font-face {
+  font-family: "RobotoCondensed";
+  font-weight: 900;
+  src: url("./../../fonts/RobotoCondensed/RobotoCondensed-Bold.eot?") format("eot"), url("./../../fonts/RobotoCondensed/RobotoCondensed-Bold.woff2") format("woff2"), url("./../../fonts/RobotoCondensed/RobotoCondensed-Bold.woff") format("woff"), url("./../../fonts/RobotoCondensed/RobotoCondensed-Bold.ttf") format("truetype"), url('./../../fonts/RobotoCondensed/RobotoCondensed-Bold.svg#str-replace(RobotoCondensed, " ", "_")') format("svg");
+  font-display: swap;
+  /* or block, swap, fallback, optional */
+}
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body.fix {
+  overflow: hidden;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 150%;
+  font-family: "Roboto";
+  color: #383031;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: auto !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  font-display: auto !important;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+a,
+a:hover {
+  text-decoration: auto !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.editor-post-featured-image .components-responsive-wrapper__content,
+.components-responsive-wrapper__content {
+  position: relative !important;
+}
+
+button:focus,
+button {
+  outline: none;
+}
+
+.font-regular {
+  font-weight: 300 !important;
+}
+
+.font-semibold {
+  font-weight: 400 !important;
+}
+
+.font-bold {
+  font-weight: 900 !important;
+}
+
+.h1 {
+  font-size: 56px !important;
+  line-height: 120% !important;
+  font-family: "RobotoCondensed" !important;
+}
+
+.h2 {
+  font-size: 36px !important;
+  line-height: 120% !important;
+  font-family: "RobotoCondensed" !important;
+}
+
+.h3 {
+  font-size: 24px !important;
+  line-height: 120% !important;
+}
+
+.sub-heading {
+  font-size: 18px !important;
+  line-height: 120% !important;
+}
+
+.p1 {
+  font-size: 18px !important;
+  line-height: 120% !important;
+}
+
+.btn-lg {
+  font-size: 16px !important;
+  line-height: 100% !important;
+}
+
+.btn-md {
+  font-size: 14px !important;
+  line-height: 100% !important;
+}
+
+.description {
+  font-size: 16px !important;
+  line-height: 120% !important;
+}
+
+.caption {
+  font-size: 12px !important;
+  line-height: 150%;
+}
+
+@media (min-width: 1024px) {
+  .h1 {
+    font-size: 60px !important;
+    line-height: 150% !important;
+  }
+
+  .h2 {
+    font-size: 48px !important;
+    line-height: 120% !important;
+  }
+
+  .h3 {
+    font-size: 24px !important;
+    line-height: 120% !important;
+  }
+
+  .sub-heading {
+    font-size: 16px !important;
+    line-height: 120% !important;
+  }
+
+  .p1 {
+    font-size: 24px !important;
+    line-height: 120% !important;
+  }
+
+  .btn-lg {
+    font-size: 18px !important;
+    line-height: 100% !important;
+  }
+
+  .btn-md {
+    font-size: 14px !important;
+    line-height: 100% !important;
+  }
+
+  .description {
+    font-size: 16px !important;
+    line-height: 120% !important;
+  }
+
+  .caption {
+    font-size: 12px !important;
+    line-height: 100% !important;
+  }
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 2px white;
+}
+
+.btn-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5em;
+  width: 10em;
+  color: white;
+  background: linear-gradient(36deg, #e65ced, #9d46ff);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.btn-main:hover {
+  box-shadow: 0px 4px 20px #e6e1e1;
+}
+
+.btn-hover {
+  text-shadow: 1px 1px 5px white;
+}
+
+/*# sourceMappingURL=main.css.map */
