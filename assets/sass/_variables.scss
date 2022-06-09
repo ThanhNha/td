@@ -13,4 +13,6 @@ $color-black: #383031;
 
 $color-gradient-1: linear-gradient(36deg, rgb(230, 92, 237), rgb(157, 70, 255));
 $color-gradient-2: linear-gradient(36deg, rgb(157, 70, 255), rgb(230, 92, 237));
-$color-radial-1: radial-gradient(rgb(230, 92, 237), rgb(157, 70, 255));
+$color-radial-1: radial-gradient(circle, rgb(230, 92, 237), rgb(157, 70, 255));
+
+$color-radial-2: radial-gradient(circle, #2a1266 -10%, #896ba9 120%);
