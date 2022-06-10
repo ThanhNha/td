@@ -76,12 +76,13 @@
   overflow: hidden;
   // background: transparent;
   z-index: 9999;
-  transform: translate(calc(100% + 6vw), 0) rotate(0.001deg);
-  @include transition_cubic;
+  pointer-events: none;
+
   .sidebar-main {
     opacity: 0;
     pointer-events: none;
     transform: translate(0, calc(100% + 6vw)) rotate(0.001deg);
+    visibility: hidden;
     @include transition;
   }
   .bg-blur-1,
@@ -90,6 +91,15 @@
     transform: translate(calc(100% + 6vw), 0) rotate(0.001deg);
     @include transition_cubic;
     will-change: transform;
+  }
+  .bg-blur-1 {
+    transition-delay: 0.5s;
+  }
+  .bg-blur-2 {
+    transition-delay: 0.7s;
+  }
+  .bg-blur-3 {
+    transition-delay: 0.9s;
   }
 
   @include tablet {
@@ -136,6 +146,7 @@
     transform: translateY(100%);
     pointer-events: none;
     opacity: 0;
+
     @include transition;
   }
   .sub-menu {
@@ -167,22 +178,14 @@
 // open menu
 body.open-menu {
   #sidebar {
-    transform: translate(0, 0) rotate(0.001deg);
     .sidebar-main {
       opacity: 1;
       pointer-events: all;
       transform: translate(0, 0) rotate(0.001deg);
       transition-delay: 1.5s;
+      visibility: visible;
     }
-    .bg-blur-1 {
-      transition-delay: 0.5s;
-    }
-    .bg-blur-2 {
-      transition-delay: 0.7s;
-    }
-    .bg-blur-3 {
-      transition-delay: 0.9s;
-    }
+
     .bg-blur-1,
     .bg-blur-2,
     .bg-blur-3 {

@@ -235,6 +235,20 @@ body.open-menu {
   overflow: hidden;
 }
 
+main {
+  padding-top: 30px;
+}
+@media (min-width: 768px) {
+  main {
+    padding-top: 45px;
+  }
+}
+@media (min-width: 992px) {
+  main {
+    padding-top: 80px;
+  }
+}
+
 #header {
   position: fixed;
   width: 100%;
@@ -313,17 +327,13 @@ body.open-menu {
   right: 0;
   overflow: hidden;
   z-index: 9999;
-  transform: translate(calc(100% + 6vw), 0) rotate(0.001deg);
-  -webkit-transition: all 0.8s cubic-bezier(0.7, 0, 0.2, 1);
-  -moz-transition: all 0.8s cubic-bezier(0.7, 0, 0.2, 1);
-  -ms-transition: all 0.8s cubic-bezier(0.7, 0, 0.2, 1);
-  -o-transition: all 0.8s cubic-bezier(0.7, 0, 0.2, 1);
-  transition: all 0.8s cubic-bezier(0.7, 0, 0.2, 1);
+  pointer-events: none;
 }
 #sidebar .sidebar-main {
   opacity: 0;
   pointer-events: none;
   transform: translate(0, calc(100% + 6vw)) rotate(0.001deg);
+  visibility: hidden;
   -webkit-transition: all 0.6s ease-in-out;
   -moz-transition: all 0.6s ease-in-out;
   -ms-transition: all 0.6s ease-in-out;
@@ -340,6 +350,15 @@ body.open-menu {
   -o-transition: all 0.8s cubic-bezier(0.7, 0, 0.2, 1);
   transition: all 0.8s cubic-bezier(0.7, 0, 0.2, 1);
   will-change: transform;
+}
+#sidebar .bg-blur-1 {
+  transition-delay: 0.5s;
+}
+#sidebar .bg-blur-2 {
+  transition-delay: 0.7s;
+}
+#sidebar .bg-blur-3 {
+  transition-delay: 0.9s;
 }
 @media (min-width: 768px) {
   #sidebar {
@@ -406,23 +425,12 @@ body.open-menu {
   right: 0px;
 }
 
-body.open-menu #sidebar {
-  transform: translate(0, 0) rotate(0.001deg);
-}
 body.open-menu #sidebar .sidebar-main {
   opacity: 1;
   pointer-events: all;
   transform: translate(0, 0) rotate(0.001deg);
   transition-delay: 1.5s;
-}
-body.open-menu #sidebar .bg-blur-1 {
-  transition-delay: 0.5s;
-}
-body.open-menu #sidebar .bg-blur-2 {
-  transition-delay: 0.7s;
-}
-body.open-menu #sidebar .bg-blur-3 {
-  transition-delay: 0.9s;
+  visibility: visible;
 }
 body.open-menu #sidebar .bg-blur-1,
 body.open-menu #sidebar .bg-blur-2,
