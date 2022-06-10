@@ -52,6 +52,7 @@ body.fix {
 }
 
 body {
+  background: radial-gradient(circle, #e65ced, #9d46ff);
   box-sizing: border-box;
   font-size: 16px;
   line-height: 150%;
