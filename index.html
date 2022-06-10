@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="./assets/lib/locomotive-scroll.css">
     <link rel="stylesheet" href="./assets/main/main.css">
-    <title>TD Media - Truyền thông TD</title>
+    <title>May be title</title>
 </head>
 
-<body>
+<body class="open-menu">
     <header id="header" class="header">
         <div class="wrapper w-full flex flex-col justify-between">
             <div class="nav flex justify-between items-center">
@@ -32,11 +32,92 @@
                 </div>
 
             </div>
-
         </div>
         <div class="line absolute bottom-0 w-[90%] left-auto right-auto"></div>
 
     </header>
+    <!-- sidebar here -->
+    <div id="sidebar" class="sidebar bg-red-400">
+        <div class="sidebar-main relative lg:px-10 md:px-7 px-5 h-full flex flex-col items-start justify-center z-10">
+            <div class="h-[70%] flex items-center ">
+                <ul class="menu-items w-full overflow-hidden flex flex-col lg:space-y-4 space-y-2">
+                    <li class="group flex items-center relative overflow-hidden active">
+                        <div class="icon-menu lg:h-[35px] h-[30px] flex space-x-2 duration-500">
+                            <div class="icon-1 w-[7px] h-full bg-pink"></div>
+                            <div class="icon-1 w-[15px] h-full bg-pink"></div>
+                        </div>
+                        <a class="group-hover:pl-[35px] block h2 uppercase font-bold group-hover:text-white duration-500"
+                            href="#">Home</a>
+                    </li>
+                    <li class="group flex items-center relative overflow-hidden has-sub">
+                        <div class="icon-menu lg:h-[35px] h-[30px] flex space-x-2 duration-500">
+                            <div class="icon-1 w-[7px] h-full bg-pink"></div>
+                            <div class="icon-1 w-[15px] h-full bg-pink"></div>
+                        </div>
+                        <a class="group-hover:pl-[35px] block h2 uppercase font-bold group-hover:text-white duration-500"
+                            href="#">Service</a>
+                    </li>
+                    <li class="group flex items-center relative overflow-hidden">
+                        <div class="icon-menu lg:h-[35px] h-[30px] flex space-x-2 duration-500">
+                            <div class="icon-1 w-[7px] h-full bg-pink"></div>
+                            <div class="icon-1 w-[15px] h-full bg-pink"></div>
+                        </div>
+                        <a class="group-hover:pl-[35px] block h2 uppercase font-bold group-hover:text-white duration-500"
+                            href="#">About</a>
+                    </li>
+                    <li class="group flex items-center relative overflow-hidden">
+                        <div class="icon-menu lg:h-[35px] h-[30px] flex space-x-2 duration-500">
+                            <div class="icon-1 w-[7px] h-full bg-pink"></div>
+                            <div class="icon-1 w-[15px] h-full bg-pink"></div>
+                        </div>
+                        <a class="group-hover:pl-[35px] block h2 uppercase font-bold group-hover:text-white duration-500"
+                            href="#">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- menu bottom here -->
+            <div class="h-[30%] w-full overflow-hidden relative">
+                <div class="sub-menu-wrapper ">
+                    <div class="flex flex-col space-y-3 justify-end items-end lg:w-2/3 md:w-[85%] w-full">
+                        <span class="h3 font-bold uppercase">Service</span>
+                        <ul class="sub-menu w-full overflow-hidden flex flex-col items-end lg:space-y-4 space-y-2">
+                            <li class="group flex items-center relative overflow-hidden active">
+                                <a class="group-hover:pr-[35px] block h3 uppercase font-bold group-hover:text-white duration-500"
+                                    href="#">Service 1 2 3</a>
+                                <div class="icon-menu lg:h-[30px] h-[25px] flex space-x-2 duration-500">
+                                    <div class="icon-1 w-[7px] h-full bg-pink"></div>
+                                    <div class="icon-1 w-[15px] h-full bg-pink"></div>
+                                </div>
+                            </li>
+                            <li class="group flex items-center relative overflow-hidden">
+                                <a class="group-hover:pr-[35px] block h3 uppercase font-bold group-hover:text-white duration-500"
+                                    href="#">Service 1 2 3</a>
+                                <div class="icon-menu lg:h-[30px] h-[25px] flex space-x-2 duration-500">
+                                    <div class="icon-1 w-[7px] h-full bg-pink"></div>
+                                    <div class="icon-1 w-[15px] h-full bg-pink"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright absolute left-[0%] lg:bottom-[15%] md:bottom-[10%] bottom-[5%]">
+                    <div class="flex flex-col space-x-2">
+                        <span class="p1">Text here</span>
+                        <span class="p1">&copy; 2022 </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Background transition animation  -->
+        <div class="absolute top-0 left-0 bottom-0 w-full h-full pointer-events-none flex flex-col items-start ">
+            <div class="bg-violet opacity-[80%] bg-blur-1 w-full flex-1"></div>
+            <div class="bg-violet opacity-[80%] bg-blur-2 w-full flex-1"></div>
+            <div class="bg-violet opacity-[80%] bg-blur-3 w-full flex-1"></div>
+        </div>
+    </div>
+
     <!-- <div class="container p-5">
         <h1 class="h1">Hello welcome!</h1>
         <h2 class="h2">Hello welcome!</h2>
@@ -71,5 +152,6 @@
     integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="./assets/lib/locomotive-scroll.min.js"></script>
+<script src="./assets/script/header.js"></script>
 
 </html>

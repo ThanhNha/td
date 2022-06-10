@@ -37,6 +37,8 @@ module.exports = {
           800: "#004B81",
           900: "#03233A",
         },
+        pink: "#e65ced",
+        violet: "#9d46ff",
       },
 
       typography: (theme) => ({
