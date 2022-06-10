@@ -18,29 +18,25 @@ flexbox
   font-family: "Roboto";
   font-weight: 900;
   src: url("./../../fonts/Roboto/Roboto-Bold.eot?") format("eot"), url("./../../fonts/Roboto/Roboto-Bold.woff2") format("woff2"), url("./../../fonts/Roboto/Roboto-Bold.woff") format("woff"), url("./../../fonts/Roboto/Roboto-Bold.ttf") format("truetype"), url('./../../fonts/Roboto/Roboto-Bold.svg#str-replace(Roboto, " ", "_")') format("svg");
-  font-display: swap;
-  /* or block, swap, fallback, optional */
+  font-display: swap; /* or block, swap, fallback, optional */
 }
 @font-face {
   font-family: "Roboto";
   font-weight: 300;
   src: url("./../../fonts/Roboto/Roboto-Light.eot?") format("eot"), url("./../../fonts/Roboto/Roboto-Light.woff2") format("woff2"), url("./../../fonts/Roboto/Roboto-Light.woff") format("woff"), url("./../../fonts/Roboto/Roboto-Light.ttf") format("truetype"), url('./../../fonts/Roboto/Roboto-Light.svg#str-replace(Roboto, " ", "_")') format("svg");
-  font-display: swap;
-  /* or block, swap, fallback, optional */
+  font-display: swap; /* or block, swap, fallback, optional */
 }
 @font-face {
   font-family: "Roboto";
   font-weight: 400;
   src: url("./../../fonts/Roboto/Roboto-Regular.eot?") format("eot"), url("./../../fonts/Roboto/Roboto-Regular.woff2") format("woff2"), url("./../../fonts/Roboto/Roboto-Regular.woff") format("woff"), url("./../../fonts/Roboto/Roboto-Regular.ttf") format("truetype"), url('./../../fonts/Roboto/Roboto-Regular.svg#str-replace(Roboto, " ", "_")') format("svg");
-  font-display: swap;
-  /* or block, swap, fallback, optional */
+  font-display: swap; /* or block, swap, fallback, optional */
 }
 @font-face {
   font-family: "RobotoCondensed";
   font-weight: 900;
   src: url("./../../fonts/RobotoCondensed/RobotoCondensed-Bold.eot?") format("eot"), url("./../../fonts/RobotoCondensed/RobotoCondensed-Bold.woff2") format("woff2"), url("./../../fonts/RobotoCondensed/RobotoCondensed-Bold.woff") format("woff"), url("./../../fonts/RobotoCondensed/RobotoCondensed-Bold.ttf") format("truetype"), url('./../../fonts/RobotoCondensed/RobotoCondensed-Bold.svg#str-replace(RobotoCondensed, " ", "_")') format("svg");
-  font-display: swap;
-  /* or block, swap, fallback, optional */
+  font-display: swap; /* or block, swap, fallback, optional */
 }
 html {
   overflow-x: hidden;
@@ -52,7 +48,7 @@ body.fix {
 }
 
 body {
-  background: radial-gradient(circle, #e65ced, #9d46ff);
+  background: radial-gradient(circle, rgb(230, 92, 237), rgb(157, 70, 255));
   box-sizing: border-box;
   font-size: 16px;
   line-height: 150%;
@@ -158,42 +154,34 @@ button {
     font-size: 60px !important;
     line-height: 150% !important;
   }
-
   .h2 {
     font-size: 48px !important;
     line-height: 100% !important;
   }
-
   .h3 {
     font-size: 24px !important;
     line-height: 100% !important;
   }
-
   .sub-heading {
     font-size: 16px !important;
     line-height: 120% !important;
   }
-
   .p1 {
     font-size: 24px !important;
     line-height: 120% !important;
   }
-
   .btn-lg {
     font-size: 18px !important;
     line-height: 100% !important;
   }
-
   .btn-md {
     font-size: 14px !important;
     line-height: 100% !important;
   }
-
   .description {
     font-size: 16px !important;
     line-height: 120% !important;
   }
-
   .caption {
     font-size: 12px !important;
     line-height: 100% !important;
@@ -206,7 +194,7 @@ button {
 }
 
 .text-shadow {
-  text-shadow: 1px 1px 2px white;
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
 }
 
 .btn-main {
@@ -215,8 +203,8 @@ button {
   align-items: center;
   height: 2.5em;
   width: 10em;
-  color: white;
-  background: linear-gradient(36deg, #e65ced, #9d46ff);
+  color: rgb(255, 255, 255);
+  background: linear-gradient(36deg, rgb(230, 92, 237), rgb(157, 70, 255));
   -webkit-transition: all 0.6s ease-in-out;
   -moz-transition: all 0.6s ease-in-out;
   -ms-transition: all 0.6s ease-in-out;
@@ -224,11 +212,11 @@ button {
   transition: all 0.6s ease-in-out;
 }
 .btn-main:hover {
-  box-shadow: 0px 4px 20px #e6e1e1;
+  box-shadow: 0px 4px 20px rgb(230, 225, 225);
 }
 
 .btn-hover {
-  text-shadow: 1px 1px 5px white;
+  text-shadow: 1px 1px 5px rgb(255, 255, 255);
 }
 
 #header {
@@ -348,7 +336,7 @@ button {
   }
 }
 #sidebar .menu-items li.active {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 #sidebar .menu-items li.active .icon-menu {
   left: 0px;
@@ -384,7 +372,7 @@ button {
   transition: all 0.6s ease-in-out;
 }
 #sidebar .sub-menu li.active {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 #sidebar .sub-menu li.active .icon-menu {
   right: 0px;
