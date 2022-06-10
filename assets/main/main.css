@@ -372,7 +372,7 @@ button {
 }
 #sidebar .sub-menu-wrapper {
   position: absolute;
-  bottom: 5%;
+  bottom: 15%;
   width: 100%;
   transform: translateY(100%);
   pointer-events: none;
@@ -382,16 +382,6 @@ button {
   -ms-transition: all 0.6s ease-in-out;
   -o-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
-}
-@media (min-width: 768px) {
-  #sidebar .sub-menu-wrapper {
-    bottom: 10%;
-  }
-}
-@media (min-width: 992px) {
-  #sidebar .sub-menu-wrapper {
-    bottom: 15%;
-  }
 }
 #sidebar .sub-menu li.active {
   color: white;

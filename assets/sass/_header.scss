@@ -131,13 +131,7 @@
   }
   .sub-menu-wrapper {
     position: absolute;
-    bottom: 5%;
-    @include tablet {
-      bottom: 10%;
-    }
-    @include desktop {
-      bottom: 15%;
-    }
+    bottom: 15%;
     width: 100%;
     transform: translateY(100%);
     pointer-events: none;
