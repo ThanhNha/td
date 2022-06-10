@@ -40,6 +40,12 @@ module.exports = {
         pink: "#e65ced",
         violet: "#9d46ff",
       },
+      backgroundImage: {
+        "linear-2": "linear-gradient(36deg, rgb(157, 70, 255), rgb(230, 92, 237));",
+        "linear-1": "linear-gradient(36deg, rgb(230, 92, 237), rgb(157, 70, 255);",
+        "radial-1": "radial-gradient(circle, rgb(230, 92, 237), rgb(157, 70, 255));",
+        "radial-2": "radial-gradient(circle, #896ba9 10%, rgb(230, 92, 237) 120%);",
+      },
 
       typography: (theme) => ({
         DEFAULT: {
