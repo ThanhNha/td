@@ -8,7 +8,7 @@ hamburger.click(() => {
 
 let has_sub = $(".has-sub");
 let sub = $(".sub-menu-wrapper");
-console.log(sub);
-has_sub.click(() => {
+has_sub.click((e) => {
+  e.preventDefault();
   sub.toggleClass("open-sub");
 });
