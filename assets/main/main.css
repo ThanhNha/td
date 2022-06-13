@@ -287,11 +287,6 @@ main {
     height: 4px;
   }
 }
-#header .nav {
-  /* ROTATE FIRST BAR */
-  /* FADE OUT SECOND BAR */
-  /* ROTATE LAST BAR */
-}
 #header .nav .hamburger-menu {
   top: 0;
   right: 0;
@@ -306,17 +301,6 @@ main {
   background-color: #fff;
   margin: 5px 0;
   transition: 0.4s;
-}
-#header .nav .active .menu-bar1 {
-  /* transform: rotate(-45deg) translate(-7px, 8px); */
-  transform: rotate(-45deg) translate(-5px, 5px);
-}
-#header .nav .active .menu-bar2 {
-  transform: scaleX(0%);
-}
-#header .nav .active .menu-bar3 {
-  /* transform: rotate(45deg) translate(-6px, -8px); */
-  transform: rotate(45deg) translate(-4px, -4px);
 }
 
 #sidebar {
@@ -425,6 +409,11 @@ main {
   right: 0px;
 }
 
+body.open-menu {
+  /* ROTATE FIRST BAR */
+  /* FADE OUT SECOND BAR */
+  /* ROTATE LAST BAR */
+}
 body.open-menu #sidebar .sidebar-main {
   opacity: 1;
   pointer-events: all;
@@ -435,6 +424,43 @@ body.open-menu #sidebar .sidebar-main {
 body.open-menu #sidebar .bg-blur-1,
 body.open-menu #sidebar .bg-blur-2,
 body.open-menu #sidebar .bg-blur-3 {
+  transform: translate(0, 0) rotate(0.001deg);
+}
+body.open-menu .menu-bar1 {
+  /* transform: rotate(-45deg) translate(-7px, 8px); */
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+body.open-menu .menu-bar2 {
+  transform: scaleX(0%);
+}
+body.open-menu .menu-bar3 {
+  /* transform: rotate(45deg) translate(-6px, -8px); */
+  transform: rotate(45deg) translate(-4px, -4px);
+}
+
+#overlay {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(68, 63, 63, 0.8);
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: 1s 0.8s cubic-bezier(0.7, 0, 0.2, 1);
+  -moz-transition: 1s 0.8s cubic-bezier(0.7, 0, 0.2, 1);
+  -ms-transition: 1s 0.8s cubic-bezier(0.7, 0, 0.2, 1);
+  -o-transition: 1s 0.8s cubic-bezier(0.7, 0, 0.2, 1);
+  transition: 1s 0.8s cubic-bezier(0.7, 0, 0.2, 1);
+  transform: translate(calc(100% + 6vw), 0) rotate(0.001deg);
+}
+
+.open-menu #overlay {
+  transition-delay: 0.5s;
+  opacity: 1;
+  pointer-events: all;
   transform: translate(0, 0) rotate(0.001deg);
 }
 
