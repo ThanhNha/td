@@ -235,18 +235,30 @@ body.open-menu {
   overflow: hidden;
 }
 
-main {
-  padding-top: 30px;
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
-@media (min-width: 768px) {
-  main {
-    padding-top: 45px;
-  }
+
+.picture-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
-@media (min-width: 992px) {
-  main {
-    padding-top: 80px;
-  }
+
+.bg-img {
+  position: relative;
+  width: 100%;
+}
+.bg-img::after {
+  display: block;
+  padding-top: 100%;
+  content: " ";
 }
 
 #header {
@@ -462,6 +474,33 @@ body.open-menu .menu-bar3 {
   opacity: 1;
   pointer-events: all;
   transform: translate(0, 0) rotate(0.001deg);
+}
+
+#nw-ss1 {
+  position: relative;
+  width: 100%;
+  height: 55vh;
+}
+@media (min-width: 768px) {
+  #nw-ss1 {
+    height: 70vh;
+  }
+}
+@media (min-width: 992px) {
+  #nw-ss1 {
+    height: 100vh;
+  }
+}
+#nw-ss1 .banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#nw-ss2 {
+  position: relative;
 }
 
 /*# sourceMappingURL=main.css.map */

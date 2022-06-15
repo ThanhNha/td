@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/lib/locomotive-scroll.css">
+    <link rel="stylesheet" href="./assets/main/main.css">
+    <title>May be title</title>
+</head>
+
+<body>
+    <div id="overlay" class="overlay"></div>
+    <header id="header" class="header">
+        <div class="wrapper w-full flex flex-col justify-between">
+            <div class="nav flex justify-between items-center">
+                <!-- logo here -->
+                <div class="w-[35%]">
+                    <a href="#"><span class="p1 font-bold text-gray-200">LOGO</span></a>
+                </div>
+                <!-- hamburger here -->
+                <div
+                    class=" relative overflow-hidden lg:w-[45px] lg:h-[45px] md:w-[40px] md:h-[40px] w-[35px] h-[35px] ">
+                    <div class="w-full h-full rounded-full border-[2px] border-white flex items-center justify-center">
+                        <div class="hamburger-menu lg:w-[70%] md:w-[90%] w-[80%]" id="hamburger-menu">
+                            <div class="menu-bar1"></div>
+                            <div class="menu-bar2"></div>
+                            <div class="menu-bar3"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="line absolute bottom-0 w-[90%] left-auto right-auto"></div>
+
+    </header>
+    <!-- sidebar here -->
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar-main relative lg:px-10 md:px-7 px-5 h-full flex flex-col items-start justify-center z-10">
+            <div class="h-[70%] flex items-center ">
+                <ul class="menu-items w-full overflow-hidden flex flex-col lg:space-y-4 space-y-2">
+                    <li class="group flex items-center relative overflow-hidden active">
+                        <div class="icon-menu lg:h-[35px] h-[30px] flex space-x-2 duration-500">
+                            <div class="icon-1 w-[7px] h-full bg-pink"></div>
+                            <div class="icon-1 w-[15px] h-full bg-pink"></div>
+                        </div>
+                        <a class="group-hover:pl-[35px] block h2 uppercase font-bold group-hover:text-white duration-500"
+                            href="#">Home</a>
+                    </li>
+                    <li class="group flex items-center relative overflow-hidden has-sub">
+                        <div class="icon-menu lg:h-[35px] h-[30px] flex space-x-2 duration-500">
+                            <div class="icon-1 w-[7px] h-full bg-pink"></div>
+                            <div class="icon-1 w-[15px] h-full bg-pink"></div>
+                        </div>
+                        <a class="group-hover:pl-[35px] block h2 uppercase font-bold group-hover:text-white duration-500"
+                            href="#">Service</a>
+                    </li>
+                    <li class="group flex items-center relative overflow-hidden">
+                        <div class="icon-menu lg:h-[35px] h-[30px] flex space-x-2 duration-500">
+                            <div class="icon-1 w-[7px] h-full bg-pink"></div>
+                            <div class="icon-1 w-[15px] h-full bg-pink"></div>
+                        </div>
+                        <a class="group-hover:pl-[35px] block h2 uppercase font-bold group-hover:text-white duration-500"
+                            href="#">About</a>
+                    </li>
+                    <li class="group flex items-center relative overflow-hidden">
+                        <div class="icon-menu lg:h-[35px] h-[30px] flex space-x-2 duration-500">
+                            <div class="icon-1 w-[7px] h-full bg-pink"></div>
+                            <div class="icon-1 w-[15px] h-full bg-pink"></div>
+                        </div>
+                        <a class="group-hover:pl-[35px] block h2 uppercase font-bold group-hover:text-white duration-500"
+                            href="#">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- menu bottom here -->
+            <div class="h-[30%] w-full overflow-hidden relative">
+                <!-- sub menu -->
+                <div class="sub-menu-wrapper ">
+                    <div class="flex flex-col space-y-4 justify-end items-end lg:w-[90%] md:w-[85%] w-full">
+                        <span class="h2 font-bold uppercase">Service</span>
+                        <ul class="sub-menu w-full overflow-hidden flex flex-col items-end lg:space-y-4 space-y-2">
+                            <li class="group flex items-center relative overflow-hidden active">
+                                <a class="group-hover:pr-[35px] block h3 uppercase font-bold group-hover:text-white duration-500"
+                                    href="#">Service 1 2 3</a>
+                                <div class="icon-menu lg:h-[30px] h-[25px] flex space-x-2 duration-500">
+                                    <div class="icon-1 w-[7px] h-full bg-pink"></div>
+                                    <div class="icon-1 w-[15px] h-full bg-pink"></div>
+                                </div>
+                            </li>
+                            <li class="group flex items-center relative overflow-hidden">
+                                <a class="group-hover:pr-[35px] block h3 uppercase font-bold group-hover:text-white duration-500"
+                                    href="#">Service 1 2 3</a>
+                                <div class="icon-menu lg:h-[30px] h-[25px] flex space-x-2 duration-500">
+                                    <div class="icon-1 w-[7px] h-full bg-pink"></div>
+                                    <div class="icon-1 w-[15px] h-full bg-pink"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright absolute left-[0%] bottom-[15%]">
+                    <div class="flex flex-col space-x-2">
+                        <span class="p1">Text here</span>
+                        <span class="p1">&copy; 2022 </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Background transition animation  -->
+        <div class="absolute top-0 left-0 bottom-0 w-full h-full pointer-events-none flex flex-col items-start ">
+            <div class="bg-violet opacity-[80%] bg-blur-1 w-full flex-1"></div>
+            <div class="bg-violet opacity-[80%] bg-blur-2 w-full flex-1"></div>
+            <div class="bg-violet opacity-[80%] bg-blur-3 w-full flex-1"></div>
+        </div>
+    </div>
+    <!-- End sidebar here -->
+    <main id="network">
+        <section id="nw-ss1" class="nw-ss1 bg-img">
+            <div class="banner overlay bg-bottom bg-no-repeat bg-cover"
+                style="background-color: rgb(220, 208, 194); background-image: url(&quot;./images/network/BG_sec1.jpg&quot;);"
+                data-bg="./images/network/BG_sec1.jpg">
+
+            </div>
+        </section>
+        <section id="nw-ss2" class="nw-ss2 lg:pb-[200px]">
+            <div class="overlay bg-top bg-no-repeat bg-cover -z-10"
+                style="background-color: rgb(220, 208, 194); background-image: url(&quot;./images/network/BG_sec2.jpg&quot;);"
+                data-bg="./images/network/BG_sec2.jpg">
+
+            </div>
+            <div class="container">
+                <div class="lg:pt-8 md:pt-6 pt-4">
+                    <div class="flex flex-col lg:space-y-8 space-y-4">
+                        <div class="flex-1">
+                            <div class="grid grid-cols-5">
+                                <div class="col-start-2 col-span-3 flex space-x-3">
+                                    <div class="flex items-center space-x-2 w-[50px] full">
+                                        <div class="bg-pink h-full w-1/4"></div>
+                                        <div class="bg-pink h-full w-1/2"></div>
+                                    </div>
+                                    <div class="text-white">
+                                        <h2 class="uppercase font-bold h2">
+                                            TDGROUP
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="grid grid-cols-12 lg:gap-[50px] md:gap-[35px] gap-[25px]">
+                                <div class="lg:col-span-6 col-span-full">
+                                    <div class="aspect-w-2 aspect-h-1">
+                                        <img src="./images/network/SEC2_img1.png" class="picture-cover object-cover"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="lg:col-span-4 col-span-full">
+                                    <div class="flex flex-col md:space-y-3 space-y-2">
+                                        <div class="description text-white">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+                                            doloribus.
+                                            Magni
+                                            amet exercitationem repellendus libero, nostrum veritatis modi? Nulla,
+                                            dolores?
+                                        </div>
+                                        <div class="">
+                                            <a class="btn btn-lg uppercase font-bold btn-main btn-hover" href="#">
+                                                <span>xem thêm</span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-span-2 lg:block hidden"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Network 2 -->
+                <div class="lg:pt-8 md:pt-6 pt-4">
+                    <div class="flex flex-col lg:space-y-8 space-y-4">
+                        <div class="flex-1">
+                            <div class="grid grid-cols-5">
+                                <div class="col-start-4 col-span-1 flex space-x-3">
+                                    <div class="flex items-center space-x-2 w-[50px] full">
+                                        <div class="bg-pink h-full w-1/4"></div>
+                                        <div class="bg-pink h-full w-1/2"></div>
+                                    </div>
+                                    <div class="text-white">
+                                        <h2 class="uppercase font-bold h2">
+                                            TDscent
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="grid grid-cols-12 lg:gap-[50px] md:gap-[35px] gap-[25px]">
+                                <div class="col-span-2 lg:block hidden"></div>
+                                <div class="lg:col-span-4 col-span-full">
+                                    <div class="flex flex-col md:space-y-3 space-y-2">
+                                        <div class="description text-white">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+                                            doloribus.
+                                            Magni
+                                            amet exercitationem repellendus libero, nostrum veritatis modi? Nulla,
+                                            dolores?
+                                        </div>
+                                        <div class="">
+                                            <a class="btn btn-lg uppercase font-bold btn-main btn-hover" href="#">
+                                                <span>xem thêm</span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="lg:col-span-6 col-span-full">
+                                    <div class="aspect-w-2 aspect-h-1">
+                                        <img src="./images/network/SEC2_img1.png" class="picture-cover object-cover"
+                                            alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Network 3 -->
+                <div class="lg:pt-8 md:pt-6 pt-4">
+                    <div class="flex flex-col lg:space-y-8 space-y-4">
+                        <div class="flex-1">
+                            <div class="grid grid-cols-5">
+                                <div class="col-start-2 col-span-3 flex space-x-3">
+                                    <div class="flex items-center space-x-2 w-[50px] full">
+                                        <div class="bg-pink h-full w-1/4"></div>
+                                        <div class="bg-pink h-full w-1/2"></div>
+                                    </div>
+                                    <div class="text-white">
+                                        <h2 class="uppercase font-bold h2">
+                                            tdworld
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="grid grid-cols-12 lg:gap-[50px] md:gap-[35px] gap-[25px]">
+                                <div class="lg:col-span-6 col-span-full">
+                                    <div class="aspect-w-2 aspect-h-1">
+                                        <img src="./images/network/SEC2_img3.png" class="picture-cover object-cover"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="lg:col-span-4 col-span-full">
+                                    <div class="flex flex-col md:space-y-3 space-y-2">
+                                        <div class="description text-white">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+                                            doloribus.
+                                            Magni
+                                            amet exercitationem repellendus libero, nostrum veritatis modi? Nulla,
+                                            dolores?
+                                        </div>
+                                        <div class="">
+                                            <a class="btn btn-lg uppercase font-bold btn-main btn-hover" href="#">
+                                                <span>xem thêm</span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-span-2 lg:block hidden"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"
+    integrity="sha512-qzrZqY/kMVCEYeu/gCm8U2800Wz++LTGK4pitW/iswpCbjwxhsmUwleL1YXaHImptCHG0vJwU7Ly7ROw3ZQoww=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+    integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
+    integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- <script src="./assets/lib/locomotive-scroll.min.js"></script> -->
+<script src="./assets/script/header.js"></script>
+
+</html>
