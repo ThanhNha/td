@@ -3,6 +3,7 @@ footer {
   width: 100%;
   padding-top: 800px;
   margin-top: -600px;
+  z-index: 999;
   @include tablet {
     padding-top: 800px;
     margin-top: -500px;

@@ -1,12 +1,13 @@
 body.open-menu {
   overflow: hidden;
 }
-// main {
-//   padding-top: 30px;
-//   @include tablet {
-//     padding-top: 45px;
-//   }
-//   @include desktop {
-//     padding-top: 80px;
-//   }
-// }
+main {
+  // lg:pb-[200px] md:pb-[140px] pb-[100px]
+  // padding-bottom: 100px;
+  // @include tablet {
+  //   padding-bottom: 140px;
+  // }
+  // @include desktop {
+  //   padding-bottom: 120px;
+  // }
+}

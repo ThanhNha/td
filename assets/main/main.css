@@ -119,7 +119,7 @@ button {
 }
 
 .h3 {
-  font-size: 24px !important;
+  font-size: 18px !important;
   line-height: 120% !important;
 }
 
@@ -488,6 +488,7 @@ footer {
   width: 100%;
   padding-top: 800px;
   margin-top: -600px;
+  z-index: 999;
 }
 @media (min-width: 768px) {
   footer {
@@ -557,6 +558,11 @@ footer .form-footer .form-input:focus {
 
 #nw-ss2 {
   position: relative;
+}
+
+.ab-ss2 {
+  position: relative;
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
