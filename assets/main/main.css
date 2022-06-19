@@ -262,6 +262,10 @@ body.open-menu {
   content: " ";
 }
 
+.text-shadow {
+  text-shadow: 1px 1px 5px white;
+}
+
 #header {
   position: fixed;
   width: 100%;
@@ -347,6 +351,7 @@ body.open-menu {
   -o-transition: all 0.8s cubic-bezier(0.7, 0, 0.2, 1);
   transition: all 0.8s cubic-bezier(0.7, 0, 0.2, 1);
   will-change: transform;
+  background-color: #0f0623;
 }
 #sidebar .bg-blur-1 {
   transition-delay: 0.5s;
