@@ -1,0 +1,42 @@
+footer {
+  position: relative;
+  width: 100%;
+  padding-top: 800px;
+  margin-top: -600px;
+  @include tablet {
+    padding-top: 800px;
+    margin-top: -500px;
+  }
+  @include desktop {
+    padding-top: 0px;
+    margin-top: -300px;
+  }
+  .main-footer {
+    @include desktop {
+      height: 800px;
+    }
+    display: flex;
+    align-items: flex-end;
+  }
+  .form-footer {
+    position: relative;
+    padding: 10px 15px;
+    background-color: #fff;
+    .btn-submit {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      width: 30%;
+      height: 100%;
+    }
+    .form-input {
+      display: block;
+      width: 70%;
+      padding-left: 10px;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
