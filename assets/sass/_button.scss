@@ -12,9 +12,23 @@
   align-items: center;
   cursor: pointer;
   height: clamp(1.5em, 2.5em, 5em);
-  width: clamp(3.5em, 10em, 15em);
+  // width: clamp(3.5em, 10em, 15em);
   color: $color-white;
   background: $color-gradient-1;
+  @include transition;
+  &:hover {
+    box-shadow: 0px 4px 20px rgb(230, 225, 225);
+  }
+}
+.btn-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: clamp(1.5em, 2.5em, 5em);
+  // width: clamp(3.5em, 10em, 15em);
+  color: $color-white;
+  background: $color-violet;
   @include transition;
   &:hover {
     box-shadow: 0px 4px 20px rgb(230, 225, 225);

@@ -26,3 +26,28 @@
 }
 .card-service {
 }
+
+//form contact
+#form-contact {
+  input {
+    background-color: transparent !important;
+    width: 100%;
+    font-size: 18px !important;
+    color: $color-white;
+    outline: none !important;
+  }
+  textarea {
+    background-color: transparent !important;
+    width: 100%;
+    font-size: 18px !important;
+    outline: none !important;
+    color: $color-white;
+  }
+}
+
+.map {
+  iframe {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
