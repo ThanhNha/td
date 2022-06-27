@@ -525,7 +525,7 @@ footer {
   width: 100%;
   padding-top: 800px;
   margin-top: -600px;
-  z-index: 999;
+  z-index: 1;
 }
 @media (min-width: 768px) {
   footer {
@@ -536,6 +536,7 @@ footer {
 @media (min-width: 992px) {
   footer {
     padding-top: 0px;
+    z-index: 999;
     margin-top: -300px;
   }
 }
