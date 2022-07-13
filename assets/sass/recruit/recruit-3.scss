@@ -1,0 +1,58 @@
+#recruit-3 {
+  .wrapper-table {
+    padding: 30px;
+  }
+  table {
+    text-align: center;
+    min-width: 800px;
+    box-shadow: $box-shadow;
+
+    //   table title code here
+    thead,
+    tbody {
+      position: relative;
+    }
+    .title-job,
+    .name-job {
+      position: sticky;
+      left: -25px;
+      z-index: 1;
+    }
+    thead th {
+      border-bottom: 5px solid transparent;
+      border-top: none;
+      border-left: 5px solid transparent;
+      text-transform: uppercase;
+      color: white;
+      &:first-child {
+        border-left: 0px solid transparent;
+      }
+    }
+    // main body table
+    tbody {
+      //   custom table td
+      tr {
+        .stt {
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+      }
+      tr td {
+        vertical-align: middle;
+        border-bottom: 0px solid transparent;
+        border-top: 0px solid transparent;
+        border-left: 5px solid transparent;
+        color: white;
+        text-transform: uppercase;
+
+        &:first-child {
+          border-left: 0px solid transparent;
+        }
+        .btn-main {
+          background: none;
+          height: auto !important;
+        }
+      }
+    }
+  }
+}
