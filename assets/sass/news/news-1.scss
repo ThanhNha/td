@@ -1,0 +1,6 @@
+#news-1 {
+  min-height: 1300px;
+  @include desktop {
+    min-height: auto;
+  }
+}
