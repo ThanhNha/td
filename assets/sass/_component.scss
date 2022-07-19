@@ -85,3 +85,41 @@
     }
   }
 }
+
+.card-solution {
+  @include desktop {
+    min-height: 400px;
+  }
+  @include transition;
+  cursor: pointer;
+  .title {
+    text-align: center;
+  }
+  .description {
+    padding-top: 10px;
+    @include desktop {
+      padding-top: 20px;
+    }
+    @include tablet {
+      padding-top: 15px;
+    }
+    overflow: hidden;
+    width: 100%;
+    @include transition;
+    height: 0;
+  }
+  .image {
+    overflow: hidden;
+  }
+  img {
+    @include transition;
+  }
+  &:hover {
+    .description {
+      height: 120px;
+    }
+    img {
+      transform: scale(1.1);
+    }
+  }
+}
