@@ -645,10 +645,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-column: span 6 / span 6;
 }
 
-.col-span-4 {
-  grid-column: span 4 / span 4;
-}
-
 .col-start-2 {
   grid-column-start: 2;
 }
@@ -682,8 +678,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 25px;
 }
 
-.mt-\[50vh\] {
-  margin-top: 50vh;
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .block {
@@ -758,10 +754,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 2px;
 }
 
-.h-\[200px\] {
-  height: 200px;
-}
-
 .min-h-\[300px\] {
   min-height: 300px;
 }
@@ -812,14 +804,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[150px\] {
   width: 150px;
-}
-
-.w-\[200px\] {
-  width: 200px;
-}
-
-.w-2\/3 {
-  width: 66.666667%;
 }
 
 .max-w-\[80\%\] {
@@ -1000,11 +984,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: transparent;
 }
 
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
 .bg-blue-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(68 57 199 / var(--tw-bg-opacity));
@@ -1048,10 +1027,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1.25rem;
 }
 
-.p-3 {
-  padding: 0.75rem;
-}
-
 .p-4 {
   padding: 1rem;
 }
@@ -1080,6 +1055,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 0.5rem;
 }
 
+.py-\[400px\] {
+  padding-top: 400px;
+  padding-bottom: 400px;
+}
+
 .py-\[25px\] {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -1106,8 +1086,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 40px;
 }
 
-.pb-\[200px\] {
-  padding-bottom: 200px;
+.pb-\[400px\] {
+  padding-bottom: 400px;
 }
 
 .pb-\[25px\] {
@@ -1120,10 +1100,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-\[100px\] {
   padding-top: 100px;
-}
-
-.pb-\[400px\] {
-  padding-bottom: 400px;
 }
 
 .text-center {
@@ -1158,14 +1134,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .opacity-\[80\%\] {
   opacity: 80%;
-}
-
-.opacity-\[0\.8\] {
-  opacity: 0.8;
-}
-
-.opacity-70 {
-  opacity: 0.7;
 }
 
 .transition {
@@ -1295,23 +1263,9 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 80%;
   }
 
-  .md\:translate-y-\[10\%\] {
-    --tw-translate-y: 10%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .md\:translate-y-\[30\%\] {
-    --tw-translate-y: 30%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
   .md\:translate-y-\[100\%\] {
     --tw-translate-y: 100%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:gap-\[35px\] {
@@ -1361,6 +1315,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
   }
 
+  .md\:p-10 {
+    padding: 2.5rem;
+  }
+
   .md\:px-7 {
     padding-left: 1.75rem;
     padding-right: 1.75rem;
@@ -1369,6 +1327,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:py-\[20px\] {
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+
+  .md\:py-\[240px\] {
+    padding-top: 240px;
+    padding-bottom: 240px;
   }
 
   .md\:py-\[35px\] {
@@ -1615,6 +1578,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
   }
 
+  .lg\:p-12 {
+    padding: 3rem;
+  }
+
   .lg\:p-8 {
     padding: 2rem;
   }
@@ -1627,6 +1594,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:py-\[30px\] {
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+
+  .lg\:py-\[300px\] {
+    padding-top: 300px;
+    padding-bottom: 300px;
   }
 
   .lg\:py-\[50px\] {
@@ -1675,9 +1647,5 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:col-start-4 {
     grid-column-start: 4;
-  }
-
-  .xl\:col-start-3 {
-    grid-column-start: 3;
   }
 }
