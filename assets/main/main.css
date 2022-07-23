@@ -396,6 +396,10 @@ body.open-menu {
   transform: scale(1.1);
 }
 
+section {
+  overflow-x: hidden;
+}
+
 #header {
   position: fixed;
   width: 100%;
